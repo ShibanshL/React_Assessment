@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  transition: 1s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Main{
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.Main .Sub{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 30% 60% 10%;
+  grid-template-columns: 100%;
+  grid-template-areas:'Carusol'
+                      'Products'
+                      'Control_bar';
+  position: relative;
+}
+.Sub .Carousel{
+  grid-area: Carusol;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width:100%;
+  /* background-color: pink; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.Sub .Products{
+  grid-area: Products;
+  width:100%;
+  height: 150vh;
+  scroll-behavior: smooth;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+
+}
+.Sub .Control_bar{
+  grid-area: Control_bar;
+  height: 10%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  /* background: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+.P2{
+  position: absolute;
+  margin-top: 165vh;
+  height: 30vh;
+  width:100vw;
+  /* bottom: 0; */
+  /* background: pink; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Popup{
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  position: fixed;
+  z-index: 15;
+  font-size: 3em;
 }
