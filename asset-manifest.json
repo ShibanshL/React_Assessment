@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/React_Assessment/static/css/main.27b0fa89.css",
+    "main.js": "/React_Assessment/static/js/main.71a557ba.js",
+    "static/media/poppins.regular.ttf": "/React_Assessment/static/media/poppins.regular.1c701c9a6b587802e3d0.ttf",
+    "index.html": "/React_Assessment/index.html",
+    "main.27b0fa89.css.map": "/React_Assessment/static/css/main.27b0fa89.css.map",
+    "main.71a557ba.js.map": "/React_Assessment/static/js/main.71a557ba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27b0fa89.css",
+    "static/js/main.71a557ba.js"
+  ]
+}
